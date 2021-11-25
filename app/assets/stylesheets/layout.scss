@@ -564,7 +564,7 @@ body > header,
   }
 
   .top-bar {
-    @extend %brand-background;
+   
   }
 }
 
@@ -577,7 +577,7 @@ body > header,
 }
 
 .top-bar {
-  background-color: inherit;
+  background-color: #EBECEC;
   padding: 0;
 
   @include breakpoint(medium) {
@@ -601,7 +601,7 @@ body > header,
     }
 
     a {
-      color: inherit;
+      color: $brand;
       line-height: inherit;
       padding-left: 0;
 
@@ -644,7 +644,7 @@ body > header,
     }
 
     &.is-dropdown-submenu {
-      background: $body-background;
+      background: $header;
       color: $text;
       margin: 0;
       margin-top: rem-calc(-12);
@@ -708,8 +708,8 @@ body > header,
 }
 
 .top-links {
-  background: $dark;
-  color: $white;
+  background: $header;
+  color: $brand;
   display: flex;
   flex-wrap: wrap;
   font-size: $small-font-size;
@@ -719,7 +719,7 @@ body > header,
   }
 
   a {
-    color: inherit;
+    color: $brand;
     margin: 0 rem-calc(6);
 
     &:hover {
@@ -753,8 +753,8 @@ body > header,
   flex-direction: column;
 
   @include breakpoint(medium) {
-    background: $body-background;
-    color: $text;
+    background: $brand;
+    color: white;
     flex-direction: row;
     padding-bottom: 0;
 
