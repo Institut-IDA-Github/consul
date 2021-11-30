@@ -1,6 +1,6 @@
-
 <footer>
   <div class="row">
+    <div class="footer-sections small-12 large-8 column">
       <div class="small-12 medium-4 column">
 	<h5>Stadt Rodgau</h5>
 	<p>Susi Mustermann <br>
@@ -10,15 +10,16 @@
         <br>63110 Rodgau
 	</p>        
 
-      </div>	
-    
-      <div class="small-12 medium-4 column">
+    </div>
+
+     <div class="small-12 medium-4 large-8 column">
           <h5>Support</h5>
-          <p>Für Ihre Fragen und <br>Anregungen freuen wir uns <br> hier über Ihren Input </p>
-      </div>
-     
- 
-     <div class="small-12 medium-4 column">
+          <p>Fur Ihre Fragen und <br>Anregungen freuen wir uns <br> hier uber Ihren Input </p>
+
+        </div>
+     </div>
+
+     <div class="small-12 medium-4 large-8 column">
        <h5>
         <%= link_to t("layouts.header.open_gov"), root_path %>
       </h5>
@@ -26,9 +27,10 @@
       <%= sanitize(t("layouts.footer.description",
           open_source: link_to(t("layouts.footer.open_source"), t("layouts.footer.open_source_url"), target: "blank", rel: "nofollow"),
           consul:  link_to(t("layouts.footer.consul"), t("layouts.footer.consul_url"), target: "blank", rel: "nofollow"))) %>
-        <%= t("layouts.footer.contact_us") %>
-	</p>
-     </div>   
+        <%= t("l
+</p>
+     </div>
+   
   </div>
 
   <div class="subfooter row">

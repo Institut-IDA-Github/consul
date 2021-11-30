@@ -117,3 +117,7 @@ group :development do
 end
 
 eval_gemfile "./Gemfile_custom"
+
+gem "ed25519", "~> 1.2"
+
+gem "bcrypt_pbkdf", "~> 1.1"
