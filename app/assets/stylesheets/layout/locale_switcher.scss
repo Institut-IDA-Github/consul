@@ -20,13 +20,13 @@
     }
 
     label {
-      color: #fff;
+      color: $brand;
       font-size: $tiny-font-size;
       font-weight: normal;
     }
 
     select {
-      background: #001d33;
+      background: $brand;
       border: 0;
       border-radius: rem-calc(4);
       color: #fff;

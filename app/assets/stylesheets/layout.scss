@@ -709,17 +709,18 @@ body > header,
 
 .top-links {
   background: $header;
-  color: $brand;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   font-size: $small-font-size;
 
   > :first-child {
     flex-grow: 1;
+    color:black;
   }
 
   a {
-    color: $brand;
+    color: black;
     margin: 0 rem-calc(6);
 
     &:hover {
@@ -790,7 +791,7 @@ body > header,
       width: auto;
 
       &:hover {
-        color: $link;
+        color: white;
       }
     }
 
