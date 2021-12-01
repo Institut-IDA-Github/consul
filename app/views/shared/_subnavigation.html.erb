@@ -19,15 +19,16 @@
                                   accesskey: "3" %>
       </li>
     <% end %>
-    <% if feature?(:legislation) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.collaborative_legislation"),
-                                legislation_processes_path,
-                                controller.class.parent == Legislation,
-                                accesskey: "4" %>
-      </li>
-    <% end %>
     
+
+ <% if feature?(:budgets) %>
+      <li>
+        <%= layout_menu_link_to t("layouts.header.budgets"),
+                                  budgets_path,
+                                  controller_name == "budgets" || controller_name == "investments",
+                                  accesskey: "5" %>
+      </li>
+    <% end %>   
     <% if feature?(:sdg) %>
       <li>
         <%= layout_menu_link_to t("layouts.header.sdg"),
