@@ -2,14 +2,7 @@
   <ul>
     <%= raw content_block("subnavigation_left") %>
 
-    <% if feature?(:debates) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.debates"),
-                                debates_path,
-                                controller_name == "debates",
-                                accesskey: "1" %>
-      </li>
-    <% end %>
+    
     <% if feature?(:proposals) %>
       <li>
         <%= layout_menu_link_to t("layouts.header.proposals"),
@@ -34,14 +27,7 @@
                                 accesskey: "4" %>
       </li>
     <% end %>
-    <% if feature?(:budgets) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.budgets"),
-                                  budgets_path,
-                                  controller_name == "budgets" || controller_name == "investments",
-                                  accesskey: "5" %>
-      </li>
-    <% end %>
+    
     <% if feature?(:sdg) %>
       <li>
         <%= layout_menu_link_to t("layouts.header.sdg"),
