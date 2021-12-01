@@ -784,7 +784,7 @@ body > header,
     position: relative;
     text-align: left;
     width: 100%;
-
+    
     @include breakpoint(medium) {
       display: block;
       font-weight: bold;
@@ -2553,11 +2553,11 @@ table {
   }
 
   .background-header {
-    clip-path: ellipse(60% 80% at 50% 0%);
-    height: $line-height * 2;
+ 
+    height: 400px; 
     background: $highlight;
-    margin-top: rem-calc(-48);
-
+    
+    
     @include breakpoint($global-width) {
       margin-left: calc(#{$full-width-margin});
       margin-right: calc(#{$full-width-margin});

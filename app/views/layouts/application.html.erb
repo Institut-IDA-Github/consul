@@ -12,7 +12,16 @@
     <%= content_for :social_media_meta_tags %>
 
     <%= raw setting["html.per_page_code_head"] %>
+   <style>
+.home-page .jumbo{
+        background-image: url("../assets/images/welcome_process.png");
+        background-size: cover;
+        background-position: center 25%;
+      }
+</style>
+
   </head>
+
   <body class="<%= yield(:body_class) %> public">
     <%= raw setting["html.per_page_code_body"] %>
 
