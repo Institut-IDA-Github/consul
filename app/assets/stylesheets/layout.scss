@@ -752,7 +752,7 @@ body > header,
 .subnavigation {
   display: flex;
   flex-direction: column;
-
+  text-align:center;
   @include breakpoint(medium) {
     background: $brand;
     color: white;
@@ -767,11 +767,13 @@ body > header,
   ul {
     list-style-type: none;
     margin: 0;
-
+    text-align:center;
+   
     li {
       @include breakpoint(medium) {
         display: inline-block;
         margin-right: rem-calc(20);
+	text-align:center;
       }
     }
   }
@@ -782,9 +784,9 @@ body > header,
     padding-bottom: $line-height / 2;
     padding-top: $line-height / 2;
     position: relative;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    
+   	   
     @include breakpoint(medium) {
       display: block;
       font-weight: bold;
